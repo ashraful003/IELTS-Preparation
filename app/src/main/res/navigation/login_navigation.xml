@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/loginLandingFragment">
+
+    <fragment
+        android:id="@+id/loginLandingFragment"
+        android:name="com.example.ieltspreparation.presentation.login.LoginLandingFragment"
+        android:label="fragment_login_landing"
+        tools:layout="@layout/fragment_login_landing" >
+        <action
+            android:id="@+id/action_loginLandingFragment_to_loginCreateFragment"
+            app:destination="@id/loginCreateFragment" />
+        <action
+            android:id="@+id/action_loginLandingFragment_to_loginInputFragment"
+            app:destination="@id/loginInputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginCreateFragment"
+        android:name="com.example.ieltspreparation.presentation.login.LoginCreateFragment"
+        android:label="fragment_login_create"
+        tools:layout="@layout/fragment_login_create" >
+        <action
+            android:id="@+id/action_loginCreateFragment_to_loginInputFragment"
+            app:destination="@id/loginInputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginInputFragment"
+        android:name="com.example.ieltspreparation.presentation.login.LoginInputFragment"
+        android:label="fragment_login_input"
+        tools:layout="@layout/fragment_login_input" >
+        <action
+            android:id="@+id/action_loginInputFragment_to_loginCreateFragment"
+            app:destination="@id/loginCreateFragment" />
+        <action
+            android:id="@+id/action_loginInputFragment_to_loginForgotPasswordFragment"
+            app:destination="@id/loginForgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginForgotPasswordFragment"
+        android:name="com.example.ieltspreparation.presentation.login.LoginForgotPasswordFragment"
+        android:label="fragment_login_forgot_password"
+        tools:layout="@layout/fragment_login_forgot_password" >
+        <action
+            android:id="@+id/action_loginForgotPasswordFragment_to_loginInputFragment"
+            app:destination="@id/loginInputFragment" />
+    </fragment>
+</navigation>
