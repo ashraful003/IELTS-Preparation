@@ -2,4 +2,29 @@
     <string name="app_name">IELTS Preparation</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_text_one">Welcome to IELTS Family</string>
+    <string name="login_text">Discover the best IELTS concept</string>
+    <string name="title_create_account">Create New Account</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="hint_location">Your location</string>
+    <string name="hint_dob">Date of Birth</string>
+    <string name="create_button_text">Continue</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="error_name">name can not be empty</string>
+    <string name="error_email">Invalid email</string>
+    <string name="error_number">Must be more then 11 letter</string>
+    <string name="error_address">Must write your address</string>
+    <string name="error_dob">Write your birth date</string>
+    <string name="login_error_msg">Oh no! Your account or password is incorrect, please check again.</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password!</string>
+    <string name="you_don_t_have_an_account">You don’t have an account?</string>
+    <string name="recover">Please enter your Email so we can help you recover your password.</string>
+    <string name="next">Next</string>
 </resources>
