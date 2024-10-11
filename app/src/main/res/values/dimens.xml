@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Layout
+    <dimen name="layout_width">0dp</dimen>
+    <dimen name="layout_height">0dp</dimen>
+    <dimen name="width_8">8dp</dimen>
+    <dimen name="view_height_56">56dp</dimen>
+
+    //Margin
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="height_8">8dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_left_86">86dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_88">88dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="button_top_margin">35dp</dimen>
+    <dimen name="button_bottom_margin">20dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_122">122dp</dimen>
+    <dimen name="margin_41">41dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_29">29dp</dimen>
+
+    //Padding
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_bottom_74">74dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_7">7dp</dimen>
+    <dimen name="padding_14">14dp</dimen>
+    <dimen name="button_padding">14dp</dimen>
+
+    //Text size
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="title_text_size">26sp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="text_size_29">29sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+
+    //Radius
+    <dimen name="card_radius_20">20dp</dimen>
+
+</resources>
