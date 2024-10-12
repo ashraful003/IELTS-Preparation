@@ -27,4 +27,7 @@
     <string name="you_don_t_have_an_account">You don’t have an account?</string>
     <string name="recover">Please enter your Email so we can help you recover your password.</string>
     <string name="next">Next</string>
+    <string name="vocabulary">Vocabulary</string>
+    <string name="grammar">Grammar</string>
+    <string name="ielts">IELTS</string>
 </resources>

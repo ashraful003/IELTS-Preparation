@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".presentation.dashboard.HomeFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+        <variable
+            name="model"
+            type="com.example.ieltspreparation.presentation.dashboard.HomeFragment" />
+    </data>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/dash_board_background">
 
-</FrameLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:paddingBottom="@dimen/padding_20"
+            android:rowCount="5">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/customerCv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_117"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:onClick="@{model.actionVocabulary}"
+                android:layout_marginLeft="@dimen/margin_11"
+                android:layout_marginTop="@dimen/margin_top_12"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/corner_radius_10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_40"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_vocabulary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/vocabulary"
+                        android:textColor="@color/dash_board_text_color"
+                        android:textSize="@dimen/text_size_11" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/saleCV"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_117"
+                android:onClick="@{model.actionGrammar}"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="@dimen/margin_left_13"
+                android:layout_marginTop="@dimen/margin_top_12"
+                android:layout_marginRight="@dimen/margin_11"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/corner_radius_10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="@dimen/width_40"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_grammar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/grammar"
+                        android:textColor="@color/dash_board_text_color"
+                        android:textSize="@dimen/text_size_11" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/productCv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_117"
+                android:onClick="@{model.actionIelts}"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="@dimen/margin_11"
+                android:layout_marginTop="@dimen/margin_top_12"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/corner_radius_10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_40"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_ielts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/ielts"
+                        android:textColor="@color/dash_board_text_color"
+                        android:textSize="@dimen/text_size_11" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+</layout>

@@ -1,6 +1,7 @@
 package com.example.ieltspreparation.presentation.login
 
 import android.os.Bundle
+import android.os.Handler
 import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,7 +13,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.example.ieltspreparation.R
 import com.example.ieltspreparation.databinding.FragmentLoginInputBinding
+import com.example.ieltspreparation.presentation.MainActivity
 import com.example.ieltspreparation.presentation.util.IPActivityUtil
+import com.example.ieltspreparation.presentation.util.IPharedPreferencesUtil
 import com.jakewharton.rxbinding2.widget.RxTextView
 import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.Observable
@@ -22,6 +25,8 @@ import javax.inject.Inject
 class LoginInputFragment : Fragment() {
     @Inject
     lateinit var activityUtil : IPActivityUtil
+    @Inject
+    lateinit var sharedPrefs: IPharedPreferencesUtil
     val actionSignUp = Navigation.createNavigateOnClickListener(R.id.action_loginInputFragment_to_loginCreateFragment)
     val actionForgotPassword = Navigation.createNavigateOnClickListener(R.id.action_loginInputFragment_to_loginForgotPasswordFragment)
     private lateinit var binding: FragmentLoginInputBinding
@@ -59,6 +64,17 @@ class LoginInputFragment : Fragment() {
             isEnableSignInButton(isValid)
         }
         binding.loginErrorTv.visibility = View.GONE
+
+        binding.btnSignIn.setOnClickListener {
+
+            activityUtil.setFullScreenLoading(true)
+            Handler().postDelayed({
+                sharedPrefs.setAuthToken("Ashraful")
+                activity?.let {
+                    startActivity(MainActivity.getLaunchIntent(it))
+                }
+            }, 3000)
+        }
 
         return binding.root
     }
