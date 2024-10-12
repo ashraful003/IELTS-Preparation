@@ -18,12 +18,16 @@ import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.ieltspreparation.R
 import com.example.ieltspreparation.databinding.FragmentLoginCreateBinding
+import com.example.ieltspreparation.presentation.util.IPActivityUtil
 import com.jakewharton.rxbinding2.widget.RxTextView
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.Locale
-
+import javax.inject.Inject
+@AndroidEntryPoint
 class LoginCreateFragment : Fragment() {
-    val actionSignIn =
-        Navigation.createNavigateOnClickListener(R.id.action_loginCreateFragment_to_loginInputFragment)
+    @Inject
+    lateinit var activityUtil : IPActivityUtil
+    val actionSignIn = Navigation.createNavigateOnClickListener(R.id.action_loginCreateFragment_to_loginInputFragment)
     private lateinit var binding: FragmentLoginCreateBinding
     private lateinit var viewModel: LoginViewModel
     @RequiresApi(Build.VERSION_CODES.N)
@@ -34,6 +38,7 @@ class LoginCreateFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login_create, container, false)
         binding.model = this
+        activityUtil.hideBottomNavigation(true)
         isEnableSignUpButton(false)
         binding.backIv.setOnClickListener {
             findNavController().popBackStack()

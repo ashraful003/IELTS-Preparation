@@ -12,9 +12,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.ieltspreparation.R
 import com.example.ieltspreparation.databinding.FragmentLoginForgotPasswordBinding
+import com.example.ieltspreparation.presentation.util.IPActivityUtil
 import com.jakewharton.rxbinding2.widget.RxTextView
-
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+@AndroidEntryPoint
 class LoginForgotPasswordFragment : Fragment() {
+    @Inject
+    lateinit var activityUtil : IPActivityUtil
     private lateinit var binding: FragmentLoginForgotPasswordBinding
     private lateinit var viewModel : LoginViewModel
     override fun onCreateView(
@@ -23,6 +28,7 @@ class LoginForgotPasswordFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_login_forgot_password, container, false)
         binding.model = this
+        activityUtil.hideBottomNavigation(true)
         val emailStream = RxTextView.textChanges(binding.emailEt)
             .skipInitialValue()
             .map { email ->

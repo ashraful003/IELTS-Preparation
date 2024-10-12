@@ -12,10 +12,16 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.example.ieltspreparation.R
 import com.example.ieltspreparation.databinding.FragmentLoginInputBinding
+import com.example.ieltspreparation.presentation.util.IPActivityUtil
 import com.jakewharton.rxbinding2.widget.RxTextView
+import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.Observable
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class LoginInputFragment : Fragment() {
+    @Inject
+    lateinit var activityUtil : IPActivityUtil
     val actionSignUp = Navigation.createNavigateOnClickListener(R.id.action_loginInputFragment_to_loginCreateFragment)
     val actionForgotPassword = Navigation.createNavigateOnClickListener(R.id.action_loginInputFragment_to_loginForgotPasswordFragment)
     private lateinit var binding: FragmentLoginInputBinding
@@ -26,6 +32,7 @@ class LoginInputFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login_input, container, false)
         binding.model = this
+        activityUtil.hideBottomNavigation(true)
         isEnableSignInButton(false)
         val emailStream = RxTextView.textChanges(binding.emailEt)
             .skipInitialValue()
