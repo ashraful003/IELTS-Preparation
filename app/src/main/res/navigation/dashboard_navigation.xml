@@ -49,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.ieltspreparation.presentation.dashboard.ProfileFragment"
+        android:name="com.example.ieltspreparation.presentation.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -58,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateProfileFragment"
-        android:name="com.example.ieltspreparation.presentation.dashboard.UpdateProfileFragment"
+        android:name="com.example.ieltspreparation.presentation.profile.UpdateProfileFragment"
         android:label="fragment_update_profile"
         tools:layout="@layout/fragment_update_profile" >
         <action

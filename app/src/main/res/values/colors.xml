@@ -15,4 +15,5 @@
     <color name="progress_bar_background_color">#9d000000</color>
     <color name="dash_board_background">#F7F9FC</color>
     <color name="dash_board_text_color">#222B45</color>
+    <color name="profile_image_background">#82888A</color>
 </resources>
