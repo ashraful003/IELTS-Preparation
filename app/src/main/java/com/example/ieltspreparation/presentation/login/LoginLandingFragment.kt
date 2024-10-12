@@ -11,12 +11,16 @@ import androidx.navigation.Navigation
 import androidx.viewpager2.widget.ViewPager2
 import com.example.ieltspreparation.R
 import com.example.ieltspreparation.databinding.FragmentLoginLandingBinding
+import com.example.ieltspreparation.presentation.util.IPActivityUtil
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class LoginLandingFragment : Fragment() {
-    val actionLogin =
-        Navigation.createNavigateOnClickListener(R.id.action_loginLandingFragment_to_loginInputFragment)
-    val actionSignUp =
-        Navigation.createNavigateOnClickListener(R.id.action_loginLandingFragment_to_loginCreateFragment)
+    @Inject
+    lateinit var activityUtil :IPActivityUtil
+    val actionLogin = Navigation.createNavigateOnClickListener(R.id.action_loginLandingFragment_to_loginInputFragment)
+    val actionSignUp = Navigation.createNavigateOnClickListener(R.id.action_loginLandingFragment_to_loginCreateFragment)
     private lateinit var binding: FragmentLoginLandingBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,7 +28,7 @@ class LoginLandingFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login_landing, container, false)
         binding.model = this
-
+        activityUtil.hideBottomNavigation(true)
         val pageOneView = LayoutInflater.from(activity).inflate(R.layout.login_slider_page_one, null)
         val pageTwoView = LayoutInflater.from(activity).inflate(R.layout.login_slider_page_two, null)
         val pageThreeView = LayoutInflater.from(activity).inflate(R.layout.login_slider_page_three, null)
