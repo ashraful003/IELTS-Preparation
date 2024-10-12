@@ -5,6 +5,9 @@
     <dimen name="layout_height">0dp</dimen>
     <dimen name="width_8">8dp</dimen>
     <dimen name="view_height_56">56dp</dimen>
+    <dimen name="height_117">117dp</dimen>
+    <dimen name="width_40">40dp</dimen>
+    <dimen name="height_40">40dp</dimen>
 
     //Margin
     <dimen name="margin_60">60dp</dimen>
@@ -28,6 +31,9 @@
     <dimen name="margin_45">45dp</dimen>
     <dimen name="margin_5">5dp</dimen>
     <dimen name="margin_29">29dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_top_12">12dp</dimen>
+    <dimen name="margin_left_13">13dp</dimen>
 
     //Padding
     <dimen name="padding_30">30dp</dimen>
@@ -37,6 +43,7 @@
     <dimen name="padding_7">7dp</dimen>
     <dimen name="padding_14">14dp</dimen>
     <dimen name="button_padding">14dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
 
     //Text size
     <dimen name="text_size_30">30sp</dimen>
@@ -48,5 +55,6 @@
 
     //Radius
     <dimen name="card_radius_20">20dp</dimen>
+    <dimen name="corner_radius_10">10dp</dimen>
 
 </resources>

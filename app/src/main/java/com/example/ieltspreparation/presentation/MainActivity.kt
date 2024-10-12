@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.RequiresApi
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -45,8 +46,8 @@ class MainActivity : AppCompatActivity(), IPActivityUtil.ActivityListener {
         navController = navHostFragment.navController
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.home -> { }
-                R.id.profile -> { }
+                R.id.home -> navHostFragment.findNavController().navigate(R.id.homeFragment)
+                R.id.profile -> navHostFragment.findNavController().navigate(R.id.profileFragment)
             }
             true
         }
@@ -61,7 +62,13 @@ class MainActivity : AppCompatActivity(), IPActivityUtil.ActivityListener {
     }
 
     override fun setFullScreenLoading(short: Boolean) {
-        TODO("Not yet implemented")
+        if (short) {
+            binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
+            binding.fullscreenLoading.visibility = View.VISIBLE
+        } else {
+            binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
+            binding.fullscreenLoading.visibility = View.GONE
+        }
     }
 
     override fun closeKeyboard() {

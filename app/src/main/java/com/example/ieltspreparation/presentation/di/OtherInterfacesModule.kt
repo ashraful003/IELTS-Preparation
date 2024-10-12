@@ -1,6 +1,6 @@
 package com.example.ieltspreparation.presentation.di
 
-import com.example.ieltspreparation.presentation.util.ISharedPreferencesUtil
+import com.example.ieltspreparation.presentation.util.IPharedPreferencesUtil
 import com.example.ieltspreparation.presentation.util.SharePreferenceUtil
 import dagger.Binds
 import dagger.Module
@@ -11,5 +11,5 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 interface OtherInterfacesModule {
     @Binds
-    fun bindSharePreferencesUtil(sharePreferencesUtil: SharePreferenceUtil): ISharedPreferencesUtil
+    fun bindSharePreferencesUtil(sharePreferencesUtil: SharePreferenceUtil): IPharedPreferencesUtil
 }

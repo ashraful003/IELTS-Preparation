@@ -10,7 +10,7 @@ import javax.inject.Singleton
 
 @Singleton
 class SharePreferenceUtil@Inject constructor(@ApplicationContext context: Context) :
-    ISharedPreferencesUtil {
+    IPharedPreferencesUtil {
     private val sharedPref = context.getSharedPreferences(
         "com.example.ieltspreparation.PREFERENCE_FILE_KEY",
         Context.MODE_PRIVATE
