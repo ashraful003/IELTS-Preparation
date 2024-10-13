@@ -37,6 +37,12 @@
         <action
             android:id="@+id/action_vocabularyFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_addVocabularyFragment"
+            app:destination="@id/addVocabularyFragment" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_vocabularyDetailsFragment"
+            app:destination="@id/vocabularyDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/ieltsFragment"
@@ -64,5 +70,34 @@
         <action
             android:id="@+id/action_updateProfileFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVocabularyFragment"
+        android:name="com.example.ieltspreparation.presentation.dashboard.AddVocabularyFragment"
+        android:label="fragment_add_vocabulary"
+        tools:layout="@layout/fragment_add_vocabulary" >
+        <action
+            android:id="@+id/action_addVocabularyFragment_to_vocabularyFragment"
+            app:destination="@id/vocabularyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vocabularyDetailsFragment"
+        android:name="com.example.ieltspreparation.presentation.dashboard.VocabularyDetailsFragment"
+        android:label="VocabularyDetailsFragment" >
+        <action
+            android:id="@+id/action_vocabularyDetailsFragment_to_vocabularyFragment"
+            app:destination="@id/vocabularyFragment" />
+        <action
+            android:id="@+id/action_vocabularyDetailsFragment_to_updateVocabularyFragment"
+            app:destination="@id/updateVocabularyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateVocabularyFragment"
+        android:name="com.example.ieltspreparation.presentation.dashboard.UpdateVocabularyFragment"
+        android:label="fragment_update_vocabulary"
+        tools:layout="@layout/fragment_update_vocabulary" >
+        <action
+            android:id="@+id/action_updateVocabularyFragment_to_vocabularyDetailsFragment"
+            app:destination="@id/vocabularyDetailsFragment" />
     </fragment>
 </navigation>

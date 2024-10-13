@@ -9,6 +9,8 @@
     <dimen name="width_40">40dp</dimen>
     <dimen name="height_40">40dp</dimen>
     <dimen name="layout_size_68">68dp</dimen>
+    <dimen name="layout_315">315dp</dimen>
+    <dimen name="layout_80">80dp</dimen>
 
     //Margin
     <dimen name="margin_60">60dp</dimen>
@@ -45,6 +47,8 @@
     <dimen name="margin_26">26dp</dimen>
     <dimen name="margin_92">92dp</dimen>
     <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
 
     //Padding
     <dimen name="padding_30">30dp</dimen>

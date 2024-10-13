@@ -37,4 +37,21 @@
     <string name="notifications">Notifications</string>
     <string name="change_password">Change Password</string>
     <string name="email">Email</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="add">Add</string>
+    <string name="word_name">Word Name</string>
+    <string name="add_vocabulary">Add Vocabulary</string>
+    <string name="bengali_meaning">Bengali meaning</string>
+    <string name="synonym_one">Synonym One</string>
+    <string name="antonym_word">Antonym Word</string>
+    <string name="save">Save</string>
+    <string name="antonym_two">Antonym two</string>
+    <string name="antonym_one">Antonym one</string>
+    <string name="synonym_two">Synonym Two</string>
+    <string name="synonym_word">Synonym Word</string>
+    <string name="english_word">English word</string>
+    <string name="word">word</string>
+    <string name="meaning">Meaning</string>
+    <string name="update_vocabulary">Update Vocabulary</string>
+    <string name="edite">Edite</string>
 </resources>
