@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.ieltspreparation"
-        minSdk 21
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -66,4 +66,12 @@ dependencies {
     //login Viewpager
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+    //firebase
+    implementation(platform 'com.google.firebase:firebase-bom:32.8.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth:22.3.1'
+    implementation 'com.google.firebase:firebase-database-ktx:20.3.1'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.3.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.3.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.11.0'
 }

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "69094535162",
-    "project_id": "ielts-preparation-45f6a",
-    "storage_bucket": "ielts-preparation-45f6a.appspot.com"
+    "project_number": "762596273922",
+    "project_id": "ieltspreparation-8c7ab",
+    "storage_bucket": "ieltspreparation-8c7ab.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:69094535162:android:a6c334d48e783c219ebe43",
+        "mobilesdk_app_id": "1:762596273922:android:5b8be957a631d8eb151c1b",
         "android_client_info": {
           "package_name": "com.example.ieltspreparation"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA1yVwBYR3X5Q1inDeshR50_qvdNanD7Sc"
+          "current_key": "AIzaSyA1Mmbv2Bh0jCDIluDwTocXX3S0_woVUHk"
         }
       ],
       "services": {
@@ -26,15 +26,15 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:69094535162:android:66f81fd8fc6486089ebe43",
+        "mobilesdk_app_id": "1:762596273922:android:02b0ce168f2196f2151c1b",
         "android_client_info": {
-          "package_name": "com.example.myapplication"
+          "package_name": "com.example.ieltspreparation.presentation"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA1yVwBYR3X5Q1inDeshR50_qvdNanD7Sc"
+          "current_key": "AIzaSyA1Mmbv2Bh0jCDIluDwTocXX3S0_woVUHk"
         }
       ],
       "services": {
