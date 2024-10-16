@@ -55,4 +55,5 @@
     <string name="update_vocabulary">Update Vocabulary</string>
     <string name="edite">Edite</string>
     <string name="auth_massage">Authentication Successful</string>
+    <string name="update_massage">Update Successful</string>
 </resources>
